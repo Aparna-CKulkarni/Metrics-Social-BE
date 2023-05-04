@@ -1,7 +1,8 @@
-package com.metrics.socialla.metricssocial;
+package com.metrics.social.metricssocial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 public class MetricsSocialApplication {
@@ -9,5 +10,5 @@ public class MetricsSocialApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MetricsSocialApplication.class, args);
 	}
-
 }
+ 
