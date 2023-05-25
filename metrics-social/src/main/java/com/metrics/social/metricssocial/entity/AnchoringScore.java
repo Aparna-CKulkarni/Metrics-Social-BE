@@ -2,44 +2,46 @@ package com.metrics.social.metricssocial.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="ANCHOR_SCORE", schema="public")
+@Table(name="anchor_score", schema="public")
 public class AnchoringScore {
 		@Id
-		@Column(name= "USER_ID")
+		@Column(name= "user_id")
 		private String userId;
 		
-		@Column(name= "USER_NAME")
+		@Column(name= "user_name")
 		private String userName;
 	    
-		@Column(name= "NAME")
+		@Column(name= "name")
 	    private String name;
 	    
-		@Column(name= "ANCHORING")
+		@Column(name= "anchoring")
 	    private double anchoring;
 	    
-		@Column(name= "NORMALIZED")
+		@Column(name= "normalized")
 	    private double normalized;
 	    
-		@Column(name= "INNOVATOR")
+		@Column(name= "innovator")
 	    private double innovator;
 	    
-	    @Column(name= "DEALPRONE")
+	    @Column(name= "dealprone")
 	    private double dealProne;
 	    
-	    @Column(name= "NOSTALGIA")
+	    @Column(name= "nostalgia")
 	    private double nostalgia;
 	    
-	    @Column(name= "DIGITAL_CHANNEL_AFFINITY")
+	    @Column(name= "digital_channel_affinity")
 	    private double digitalChannelAffinity;
 	    
-	    @Column(name= "PROMOTER_WOM")
+	    @Column(name= "promoter_wom")
 	    private double promoterWOM;
 	    
-	    @Column(name= "IMMITATION")
+	    @Column(name= "immitation")
 	    private double immitation;
 
 	    public AnchoringScore() {}
