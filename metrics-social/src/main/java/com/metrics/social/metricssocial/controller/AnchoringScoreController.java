@@ -1,6 +1,7 @@
 package com.metrics.social.metricssocial.controller;
 
 import java.io.IOException;
+import java.io.File;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import com.metrics.social.metricssocial.service.AnchoringBusinessService;
 public class AnchoringScoreController {
 		@Autowired
 		private AnchoringBusinessService anchoringBusinessService;
-		private static final String CSV_FILE_PATH= "C:\\Users\\Aparna\\Documents\\metrics@social\\anchoring-business-scores.csv";
+		private static final File CSV_FILE_PATH= "MediaType.MultipartFile";
 		
 		@GetMapping("/import-csv")
 	    public ResponseEntity<Void> importCsv() {

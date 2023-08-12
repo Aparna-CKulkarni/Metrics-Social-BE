@@ -19,9 +19,9 @@ public class AnchoringBusinessService {
 	    @Autowired
 	    private AnchoringScoreRepository anchoringScoreRepository;
 
-	    public void saveCsvDataToDb(String file) throws IOException{
+	    public void saveCsvDataToDb(Object csvFilePath) throws IOException{
 	        try {
-	        	FileReader filereader = new FileReader(file);
+	        	FileReader filereader = new FileReader((String) csvFilePath);
 	        	CSVReader csvReader = new CSVReaderBuilder(filereader).withSkipLines(1).build();
 	            List<String[]> rows = csvReader.readAll();
 	
